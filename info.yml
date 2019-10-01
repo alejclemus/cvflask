@@ -3,7 +3,9 @@ Ale:
   edad: 20
   estadocivil: Soltera
   email: alejdelcomp@gmail.com
-  address: 17 ave 5-53 zona 14 casa 1
+  address: 
+    -17 ave 5-53 zona 14 
+    -casa 1
   nationality: guatemalteca
   about: 
     -Estudiante de Computer Science

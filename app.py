@@ -3,6 +3,7 @@ from flask import Flask, request, render_template           # import flask
 import os,optparse 
 import yaml
 app = Flask(__name__)             # create an app instance
+app.static_folder = 'Templates'
 
 data = yaml.load(open('info.yml'))
 environment=os.getenv("ENVIRONMENT","development")
