@@ -1,14 +1,15 @@
 # app.py
-from flask import Flask           # import flask
+from flask import Flask, request, render_template           # import flask
+import os,optparse 
+import yaml
 app = Flask(__name__)             # create an app instance
-import os,optparse
 
-developer = os.getenv("DEVELOPER", "Me")
+data = yaml.load(open('info.yml'))
 environment=os.getenv("ENVIRONMENT","development")
 
 @app.route("/")                   # at the end point /
 def hello():                      # call method hello
-    return "Hello World!"         # which returns "hello world"
+    return render_template('index.html', data = data)         # which returns "hello world"
 
 @app.route("/information")
 def info():
