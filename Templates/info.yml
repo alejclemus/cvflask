@@ -12,15 +12,27 @@ Ale:
     - 17 ave 5-53 
     - zona 14 casa 1
   nationalidad: guatemalteca
-  sobremi: 
-    - Estudiante de Computer Science
-    - Apasionada por viajar 
-    - Amante de los animales
+  sobremi: |
+     Estudiante de Computer Science
+     Apasionada por viajar 
+     Amante de los animales
 
 Formación:
-  -Colegio:
+  Colegio:
     nombre: El Sagrado Corazón de Jesús
-    nivel: Educación Secundaria
+    nivel: Preescolar, Primaria, Básicos y Diversificado
     nombrecarrera: Bachillerato en Ciencias y Letras
-    periodo: 2016-2017
+    periodo: 2003-2017
 
+  Universidad:
+    nombre: Universidad Francisco Marroquín
+    nivel: Licenciatura
+    nombrecarrera: Computer Science
+    periodo: 2018-actual
+
+Experiencia: 
+  empresa: N/A
+  puesto: N/A
+  periodo: N/A
+  descripcion: N/A
+  

@@ -26,45 +26,6 @@
 </head>
 <body>
 	
-	<header>
-		<div class="container">
-			<div class="heading-wrapper">
-				<div class="row">
-					<div class="col-sm-6 col-md-6 col-lg-4">
-						<div class="info">
-							<i class="icon ion-ios-location-outline"></i>
-							<div class="right-area">
-								<h5>{{data.Ale.direccion.0}}</h5>
-								<h6>{{data.Ale.direccion.1}}</h6>
-							</div><!-- right-area -->
-						</div><!-- info -->
-					</div><!-- col-sm-4 -->
-					
-					<div class="col-sm-6 col-md-6 col-lg-4">
-						<div class="info">
-							<i class="icon ion-ios-telephone-outline"></i>
-							<div class="right-area">
-								<h5>{{data.Ale.numero.0}}</h5>
-								<h6>{{data.Ale.numero.1}}</h6>
-							</div><!-- right-area -->
-						</div><!-- info -->
-					</div><!-- col-sm-4 -->
-					
-					<div class="col-sm-6 col-md-6 col-lg-4">
-						<div class="info">
-							<i class="icon ion-ios-chatboxes-outline"></i>
-							<div class="right-area">
-								<h5>{{data.Ale.email.0}}</h5>
-								<h6>{{data.Ale.email.1}}</h6>
-
-							</div><!-- right-area -->
-						</div><!-- info -->
-					</div><!-- col-sm-4 -->
-				</div><!-- row -->
-			</div><!-- heading-wrapper -->
-			
-		</div><!-- container -->
-	</header>
 	
 	<section class="intro-section">
 		<div class="container">
@@ -74,24 +35,13 @@
 					<div class="intro">
 						<div class="profile-img"><img src="{{ url_for('static', filename='images/profile-1-250x250.jpeg') }}" alt=""></div>
 						<h2><b>{{data.Ale.nombre}}</b></h2>
-						<ul class="information margin-tb-30">
-							<li><b>EDAD : </b>{{data.Ale.edad}}</li>
-							<li><b>NACIONALIDAD : </b>{{data.Ale.nationalidad}}</li>
-							<li><b>ESTADO CIVIL : </b>{{data.Ale.estadocivil}}</li>
-						</ul>
-						<ul class="social-icons">
-							<li><a href="https://www.pinterest.es/alejdelcomp/"><i class="ion-social-pinterest"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/alejandra-lemus-3a9435167"><i class="ion-social-linkedin"></i></a></li>
-							<li><a href="https://www.instagram.com/alej.lemus/?hl=es"><i class="ion-social-instagram"></i></a></li>
-							<li><a href="https://www.facebook.com/alejandra.lemusdelcompare?ref=bookmarks"><i class="ion-social-facebook"></i></a></li>
-							<li><a href="https://twitter.com/alealelem"><i class="ion-social-twitter"></i></a></li>
-						</ul>
 					</div><!-- intro -->
 				</div><!-- col-sm-8 -->
 			</div><!-- row -->
 		</div><!-- container -->
 	</section><!-- intro-section -->
 	
+
 	<section class="portfolio-section section">
 			<div class="container">
 				<div class="row">
@@ -103,50 +53,27 @@
 						</div><!-- portfolioFilter -->
 					</div><!-- col-sm-8 -->
 				</div><!-- row -->
-			</div><!-- container -->
+            </div><!-- container -->
 		</section><!-- portfolio-section -->
 	
 			
 	
-	<section class="experience-section section">
+	<section class="education-section section">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4">
 					<div class="heading">
-						<h3><b>Work Experience</b></h3>
-						<h6 class="font-lite-black"><b>PREVIOUS JOBS</b></h6>
+						<h3><b>EXPERIENCIA LABORAL</b></h3>
+						<h6 class="font-lite-black"><b>Trabajos previos</b></h6>
 					</div>
 				</div><!-- col-sm-4 -->
 				<div class="col-sm-8">
 				
 					<div class="experience margin-b-50">
-						<h4><b>JUNIOR PROJECT MANAGER</b></h4>
-						<h5 class="font-yellow"><b>DESIGN STUDIO</b></h5>
-						<h6 class="margin-t-10">MARCH 2015 - PRESENT</h6>
-						<p class="font-semi-white margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
-							quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu, 
-							eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
-						<ul class="list margin-b-30">
-							<li>Duis non volutpat arcu, eu mollis tellus.</li>
-							<li>Quis consequat nulla effi citur at.</li>
-							<li>Sed finibus aliquam neque sit.</li>
-						</ul>
-					</div><!-- experience -->
-					
-					<div class="experience margin-b-50">
-						<h4><b>WEB MASTER/WEB DEVELOPER</b></h4>
-						<h5 class="font-yellow"><b>DESIGN & WEB STUDIO</b></h5>
-						<h6 class="margin-t-10">APRIL 2014 - FEBRUARY 2015</h6>
-						<p class="font-semi-white margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
-							quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu, 
-							eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
-						<ul class="list margin-b-30">
-							<li>Duis non volutpat arcu, eu mollis tellus.</li>
-							<li>Quis consequat nulla effi citur at.</li>
-							<li>Sed finibus aliquam neque sit.</li>
-						</ul>
+						<h4><b>{{data.Experiencia.puesto}}</b></h4>
+						<h5 class="font-yellow"><b>{{data.Experiencia.empresa}}</b></h5>
+						<h6 class="margin-t-10">{{data.Experiencia.periodo}}</h6>
+						<p class="font-semi-white margin-tb-30">{{data.Experiencia.descripcion}} </p>
 					</div><!-- experience -->
 					
 				</div><!-- col-sm-8 -->
