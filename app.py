@@ -4,25 +4,28 @@ import os,optparse
 import yaml
 app = Flask(__name__)             # create an app instance
 app.static_folder = 'Templates'
-
-data = yaml.load(open('info.yml'))
 environment=os.getenv("ENVIRONMENT","development")
-
+with open("Templates/info.yml", 'r',encoding='utf-8') as stream:
+    try:
+        data = yaml.safe_load(stream)
+    except yaml.YAMLError as exc:
+        print(exc)
+        
 @app.route("/")                   # at the end point /
-def hello():                      # call method hello
-    return render_template('index.html', data = data)         # which returns "hello world"
+def main():                      
+    return render_template('index.html', data = data)        
 
-@app.route("/information")
-def info():
-    return "test1"
+@app.route("/info")                   # at the end point /
+def info():                      
+    return render_template('index.html', data = data)        
 
-@app.route("/academics")
+@app.route("/formacion")
 def academics():
-    return "test2"
+    return render_template('formacion.html', data = data)
 
-@app.route("/experience")
+@app.route("/experiencia")
 def experience():
-    return "test3"
+    return render_template('experiencia.html', data = data)
 
 if __name__ == "__main__":        # on running python app.py
     debug=False
