@@ -1,0 +1,19 @@
+Ale:
+  nombre: Alejandra Lemus
+  edad: 20
+  estadocivil: Soltera
+  email: alejdelcomp@gmail.com
+  address: 17 ave 5-53 zona 14 casa 1
+  nationality: guatemalteca
+  about: 
+    -Estudiante de Computer Science
+    -Apasionada por viajar 
+    -Amante de los animales
+
+Formación:
+  -Colegio:
+    nombre: El Sagrado Corazón de Jesús
+    nivel: 
+    nombrecarrera: Bachillerato en Ciencias y Letras
+    periodo: 
+
