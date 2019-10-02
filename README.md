@@ -14,6 +14,6 @@ python main.py
 You can build the image, and run it as
 
 ```bash
-docker build --rm -f "Dockerfile" -t name:latest .
+docker build --rm -f "dockerFile" -t name:latest .
 
 docker run -it -p 5000:5000 name:latest
